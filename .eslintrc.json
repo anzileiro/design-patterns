@@ -1,0 +1,52 @@
+{
+  "env": {
+    "es2020": true,
+    "node": true,
+    "jest": true
+  },
+  "extends": [
+    "airbnb"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 11,
+    "sourceType": "module"
+  },
+  "rules": {
+    "no-unused-vars": "off",
+    "no-unsafe-innerhtml/no-unsafe-innerhtml": "off",
+    "security/detect-object-injection": "off",
+    "import/no-unresolved": "off",
+    "no-plusplus": "off",
+    "import/prefer-default-export": "off",
+    "class-methods-use-this": "off",
+    "no-useless-constructor": "off",
+    "no-empty-function": "off",
+    "import/no-dynamic-require": "off",
+    "global-require": "off",
+    "dot-notation": "off",
+    "new-cap": "off",
+    "no-underscore-dangle": "off",
+    "no-restricted-syntax": "off",
+    "no-await-in-loop": "off",
+    "semi": "off",
+    "max-len": "off"
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "import"
+  ],
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [
+        ".ts",
+        ".tsx"
+      ]
+    },
+    "import/resolver": {
+      "typescript": {
+        "@application": "./src/application"
+      }
+    }
+  }
+}
